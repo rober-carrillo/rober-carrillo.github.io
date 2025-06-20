@@ -28,10 +28,8 @@
 		<!-- Main -->
 			<div id="main">
 
-					<!--Chat Box-->
+				<!--Chat Box-->
 					<section id = "one">
-
-						
 
 						<h2>Ask me any questions, any time!</h2>
 						<h2>If you wish to communicate further leave your email at the end.</h2>
@@ -46,15 +44,21 @@
 						<style>
 							/* Container to center the gradio-app */
 							#chat-container {
-								width: 70%;          /* or any width you prefer */
+								width: 80%;          /* or any width you prefer */
 								margin: 40px auto;   /* top/bottom margin + horizontal auto centers */
 							}
 						gradio-app {
 							display: block;
-							width: 70%;          /* Or set to 50% if you want narrower */
-							height: 400px;    /* Fixed or minimum height */
+							width: 80%;          /* Or set to 50% if you want narrower */
+							height: 320px;    /* Fixed or minimum height */
 							border: none;
 						}
+						@media (max-width: 600px) {
+						#chat-container {
+							width: 90%;  /* almost full width on small devices */
+						}
+						}
+
 						</style>
 
 						<!-- Your embedded Space as a web component -->
