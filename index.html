@@ -31,73 +31,42 @@
 				<!--Chat Box-->
 					<section id = "one">
 
-						<h2>Ask me any questions, any time!</h2>
-						<h2>If you wish to communicate further leave your email at the end.</h2>
+						<div class="col-4 col-12-small">
+							<article class="col-6 col-12-xsmall work-item">
+								<h2>Ask me any questions, any time!</h2>
+								<h2>If you wish to communicate further leave your email at the end.</h2>
 
-						<!-- Gradio loader script (must remain as-is) -->
-						<script
-						type="module"
-						src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
-						></script>
+								<!-- Gradio loader script (must remain as-is) -->
+								<script
+								type="module"
+								src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
+								></script>
 
-						<!-- Style the Gradio app to prevent abrupt height changes -->
-						<style>
-							/* Container to center the gradio-app */
-							#chat-container {
-								width: 80%;          /* or any width you prefer */
-								margin: 40px auto;   /* top/bottom margin + horizontal auto centers */
-							}
-						gradio-app {
-							display: block;
-							width: 80%;          /* Or set to 50% if you want narrower */
-							height: 320px;    /* Fixed or minimum height */
-							border: none;
-						}
-						@media (max-width: 600px) {
-						#chat-container {
-							width: 90%;  /* almost full width on small devices */
-						}
-						}
-
-						</style>
-
-						<!-- Your embedded Space as a web component -->
-						<gradio-app src="https://robercarrillog-career-chat.hf.space"></gradio-app>
-
-						<article class="col-6 col-12-xsmall work-item">
-							<h2>Ask me any questions, any time!</h2>
-							<h2>If you wish to communicate further leave your email at the end.</h2>
-
-							<!-- Gradio loader script (must remain as-is) -->
-							<script
-							type="module"
-							src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
-							></script>
-
-							<!-- Style the Gradio app to prevent abrupt height changes -->
-							<style>
-								/* Container to center the gradio-app */
-								#chat-container {
-									width: 80%;          /* or any width you prefer */
-									margin: 40px auto;   /* top/bottom margin + horizontal auto centers */
+								<!-- Style the Gradio app to prevent abrupt height changes -->
+								<style>
+									/* Container to center the gradio-app */
+									#chat-container {
+										width: 80%;          /* or any width you prefer */
+										margin: 40px auto;   /* top/bottom margin + horizontal auto centers */
+									}
+								gradio-app {
+									display: block;
+									width: 80%;          /* Or set to 50% if you want narrower */
+									height: 320px;    /* Fixed or minimum height */
+									border: none;
 								}
-							gradio-app {
-								display: block;
-								width: 80%;          /* Or set to 50% if you want narrower */
-								height: 320px;    /* Fixed or minimum height */
-								border: none;
-							}
-							@media (max-width: 600px) {
-							#chat-container {
-								width: 90%;  /* almost full width on small devices */
-							}
-							}
+								@media (max-width: 600px) {
+								#chat-container {
+									width: 90%;  /* almost full width on small devices */
+								}
+								}
 
-							</style>
+								</style>
 
-							<!-- Your embedded Space as a web component -->
-							<gradio-app src="https://robercarrillog-career-chat.hf.space"></gradio-app>
-						</article>
+								<!-- Your embedded Space as a web component -->
+								<gradio-app src="https://robercarrillog-career-chat.hf.space"></gradio-app>
+							</article>
+						</div>
 
 
 					</section>
