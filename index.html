@@ -51,6 +51,72 @@
 						</div>
 
 
+
+						<h2>Ask me any questions, any time!</h2>
+						<h2>If you wish to communicate further leave your email at the end.</h2>
+
+						<!-- Gradio loader script (must remain as-is) -->
+						<script
+						type="module"
+						src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
+						></script>
+
+						<style>
+						#chat-placeholder {
+							position: relative;
+							width: 50%;
+							margin: 40px auto;
+							min-height: 450px; /* This creates the blank space */
+						}
+
+						gradio-app {
+							display: block;
+							width: 100%;
+							min-height: 450px;
+							position: absolute;
+							top: 0;
+							left: 0;
+							border: none;
+							transition: opacity 0.3s ease;
+						}
+
+						#loading-message {
+							text-align: center;
+							color: #888;
+							font-family: sans-serif;
+							padding-top: 180px;
+						}
+
+						@media (max-width: 600px) {
+							#chat-placeholder {
+							width: 90%;
+							margin: 20px auto;
+							}
+						}
+						</style>
+
+						<div id="chat-placeholder">
+						<!-- Temporary loading message in the blank space -->
+						<div id="loading-message">Loading the chat assistant...</div>
+
+						<!-- Embedded Gradio chat -->
+						<gradio-app id="gradio-chat" src="https://robercarrillog-career-chat.hf.space"></gradio-app>
+						</div>
+
+						<script>
+						const gradioApp = document.getElementById('gradio-chat');
+						const loadingMsg = document.getElementById('loading-message');
+
+						const interval = setInterval(() => {
+							if (gradioApp.shadowRoot?.querySelector("iframe, .block, gradio-app")) {
+							loadingMsg.style.display = 'none';
+							clearInterval(interval);
+							}
+						}, 100);
+						</script>
+
+
+
 					</section>
 
 				<!-- Two -->
