@@ -28,76 +28,7 @@
 		<!-- Main -->
 			<div id="main">
 				
-				<!--Chat Box-->
-					<!--
-					<section id = "one">
-
-						<h2 style="text-align: center;"> Got a question, drop it here anytime!</h2>
-						<h2 style="text-align: center;"> If you wish to communicate further leave your email.</h2>
-
-						<script
-						type="module"
-						src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
-						></script>
-						<style>
-						#chat-placeholder {
-							position: relative;
-							width: 50%;
-							margin: 40px auto;
-							min-height: 540px; /* This creates the blank space */
-							overflow:hidden;
-
-						}
-
-						gradio-app {
-							display: block;
-							width: 100%;
-							min-height: 540px;
-							position: absolute;
-							top: 0;
-							left: 0;
-							border: none;
-							transition: opacity 0.3s ease;
-						}
-
-						#loading-message {
-							text-align: center;
-							color: #ffffff;
-							font-family: sans-serif;
-							padding-top: 180px;
-						}
-
-						@media (max-width: 600px) {
-							#chat-placeholder {
-							width: 90%;
-							margin: 20px auto;
-							}
-						}
-						</style>
-
-						<div id="chat-placeholder">
-
-						<div id="loading-message">Loading chat assistant...</div>
-
-
-						<gradio-app id="gradio-chat" src="https://robercarrillog-career-chat.hf.space"></gradio-app>
-						</div>
-
-						<script>
-						const gradioApp = document.getElementById('gradio-chat');
-						const loadingMsg = document.getElementById('loading-message');
-
-						const interval = setInterval(() => {
-							if (gradioApp.shadowRoot?.querySelector("iframe, .block, gradio-app")) {
-							loadingMsg.style.display = 'none';
-							clearInterval(interval);
-							}
-						}, 100);
-						</script>
-
-
-					-->
-					</section>
+				
 				<!-- Two -->
 					<section id="two">
 						<h2>Previous Work</h2>
@@ -176,6 +107,80 @@
 						</ul>
 					</section>
 
+
+				<!--Chat Box-->
+					
+					<section id = "one">
+
+						<h2 style="text-align: center;"> Got a question, drop it here anytime!</h2>
+						<h2 style="text-align: center;"> If you wish to communicate further leave your email.</h2>
+
+						<script
+						type="module"
+						src="https://gradio.s3-us-west-2.amazonaws.com/5.33.1/gradio.js"
+						></script>
+						<style>
+						#chat-placeholder {
+							position: relative;
+							width: 50%;
+							margin: 40px auto;
+							min-height: 540px; /* This creates the blank space */
+							overflow:hidden;
+
+						}
+
+						gradio-app {
+							display: block;
+							width: 100%;
+							min-height: 540px;
+							position: absolute;
+							top: 0;
+							left: 0;
+							border: none;
+							transition: opacity 0.3s ease;
+						}
+
+						#loading-message {
+							text-align: center;
+							color: #ffffff;
+							font-family: sans-serif;
+							padding-top: 180px;
+						}
+
+						@media (max-width: 600px) {
+							#chat-placeholder {
+							width: 90%;
+							margin: 20px auto;
+							}
+						}
+						</style>
+
+						<div id="chat-placeholder">
+
+						<div id="loading-message">Loading chat assistant...</div>
+
+
+						<gradio-app id="gradio-chat" src="https://robercarrillog-career-chat.hf.space"></gradio-app>
+						</div>
+
+						<script>
+						const gradioApp = document.getElementById('gradio-chat');
+						const loadingMsg = document.getElementById('loading-message');
+
+						const interval = setInterval(() => {
+							if (gradioApp.shadowRoot?.querySelector("iframe, .block, gradio-app")) {
+							loadingMsg.style.display = 'none';
+							clearInterval(interval);
+							}
+						}, 100);
+						</script>
+
+
+					
+					</section>
+					
+
+				
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
